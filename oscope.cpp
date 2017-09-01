@@ -1,4 +1,4 @@
-# include <eint_t.hpp>
+# include <mdlint.h>
 # include <boost/asio/serial_port.hpp>
 # include <boost/asio.hpp>
 # include <boost/thread.hpp>
@@ -15,7 +15,7 @@ mdl::uint_t ib_buff_point = 0;
 
 mdl::u8_t *frame_pm = nullptr;
 boost::asio::io_service io_service;
-boost::asio::serial_port serial_port(io_service, "/dev/ttyACM0");
+boost::asio::serial_port serial_port(io_service, "/dev/ttyUSB0");
 
 bool osc_to_shutdown = false;
 std::atomic<bool> unload_ib_buff;

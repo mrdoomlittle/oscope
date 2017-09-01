@@ -1,5 +1,5 @@
 # include "config.h"
-# include <eint_t.hpp>
+# include <mdlint.h>
 # include <cstdio>
 
 __global__ void gpu_shift_left(mdl::uint_t *__xa_len, mdl::u8_t *__pm_frame, mdl::u8_t *__pmf_buff) {
